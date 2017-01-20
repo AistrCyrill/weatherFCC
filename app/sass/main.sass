@@ -36,10 +36,113 @@ body
 	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
+	height: 100%
+	font-family: "Raleway", sans-serif
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+.background 
+	height: 100%
+	width: 100%
+	position: relative
+	background: url(../img/le60j2br1bi-zachary-staines.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-size:  cover
+	background-color: #999
+
+.content-section 
+	margin: auto
+	border-radius: 50%
+	text-align: center
+	height: 35vw
+	width: 35vw
+	background-color: rgba(0, 0, 0, 0.3)
+	color: #fff
+	background: linear-gradient(to top right, rgba(168,8,97, .5 ), rgba(220, 20, 60, .5), rgba(255, 69, 0, .5), rgba(255,215,0, 0.5));
+	overflow: hidden
+
+.vertcenter
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50% ,-50%)
+.tac 
+	text-align: center
+	color: #fff
+#geo 
+	font-size: 3.0vh
+
+#temp 
+	padding-top: auto
+	position: relative
+	line-height: 100px
+	white-space: nowrap
+	font-size: 9vw
+	line-height: 40px
+	font-family: "Raleway"
+	font-weight: 300
+
+#weather
+	font-family: "Raleway"
+	font-weight: 300
+.ghost-center 
+	position: relative
+	height: 100%
+
+.ghost-center::before 
+  content: " "
+  display: inline-block
+  height: 100%
+  width: 1%
+  vertical-align: middle
+
+.ghost-center h2 
+	display: inline-block
+	vertical-align: middle
+
+.deg
+	float: right
+	position: relative
+	left: 7vw
+	top: 1vw
+
+
+
+#celsius
+	display: inline-block
+	font-size: 3vw
+	font-weight: 300
+	cursor: pointer
+
+#separator	
+	display: inline-block
+	font-size: 3vw
+	font-weight: 300
+
+
+#Fahrenheit
+	display: inline-block
+	font-size: 3vw
+	font-weight: 300
+	color: #fff
+	opacity: .4
+	cursor: pointer
+
+
+#Fahrenheit 
+	&:hover 
+		opacity: 1
+
+
+
+.active
+	opacity: 1
+    transition:  0.8s ease
+
 
 @import "media" // Всегда в конце
